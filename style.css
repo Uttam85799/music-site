@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');          
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600:#dc0000;
+    --body:#f9f6ff;
+    --max-width: 75rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+/* navigation bar */
+section{
+    scroll-margin: 3rem;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container
+{
+    max-width: 75rem;
+    margin: 0 auto; 
+}
+
+
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow:0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    padding: 1rem 0;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+}
+button{
+    padding: 0.7rem;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav ul li{
+    border-bottom: 2 px solid transparent;
+    transition: 0.2s ease-in;
+   
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+/* hero section */
+.hero-section{
+    background-image: url(./image/hero.jpeg);
+    height: 100vh;
+    display: grid;
+    color: white;
+    text-align: center;
+    place-items: center;
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.hero-section h1{
+    font-size: 6rem;
+}
+.hero-section h3{
+    font-size: 2rem;
+}
+
+/* music section */
+.music-section {
+    padding-top: 3rem;
+    background: var(--purple500);
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    padding:0  5rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+}
+.ipad-iphone-img{
+    position: relative;
+    top: 15rem;
+    margin-top: -15rem;
+    align-self: flex-end;
+    
+}
+.primary_btn{
+    background-color:var(--red600);
+    color: white;
+}
+.secondary_btn{
+    background-color: var(--purple300);
+    color: white;
+}
+.about-music{
+    padding-top: 18rem;
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.video-section{
+    background-image: url(./image/WhatsApp\ Image\ 2024-03-27\ at\ 7.56.10\ AM\ \(2\).jpeg);
+    height: 38rem;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   margin-top: -7.5rem;
+}.hero-section,.video-section{
+    position: relative;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gift-section{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-upper{
+    background-color: var(--purple600);
+    padding: 1rem;
+}
+.footer-upper .container{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer-upper h4{
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid white;
+    margin-bottom: 0.75rem;
+}
+.footer-lower{
+    background-color: var(--purple300);
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.gift-section{
+    scroll-margin: 7rem;
+}
